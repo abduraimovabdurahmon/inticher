@@ -5,8 +5,6 @@ require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-bot.on('message', (ctx) => {
-    console.log(ctx.message.text);
-})
+
 
 bot.launch();
